@@ -16,6 +16,7 @@ namespace Organics.Controllers
         //
         // GET: /Product/
 
+
         public ActionResult Index()
         {
             return View(db.Products.ToList());
