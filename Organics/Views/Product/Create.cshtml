@@ -1,5 +1,23 @@
-﻿@model Organics.Models.ProductModels
+﻿@using Organics.Common
+@model Organics.Models.ProductModels
 
+
+<script type="text/javascript" src="@Url.Content("~/content/javascript/ckeditor/ckeditor.js")"></script>
+
+<script type="text/javascript" src="@Url.Content("~/content/javascript/ckeditor/adapters/jquery.js")"></script>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        //alert('here');
+        //$('@Html.ClientIdFor(model => model.description)').ckeditor();
+        CKEDITOR.replace('@Html.ClientIdFor(model => model.description)');
+        //$(".adminRichText").ckeditor();
+    });
+    
+
+
+</script>
 @{
     ViewBag.Title = "Create";
 }
@@ -24,7 +42,8 @@
             @Html.LabelFor(model => model.description)
         </div>
         <div class="editor-field">
-            @Html.EditorFor(model => model.description)
+            
+            @Html.EditorFor(model => model.description, new { @id = "txtdescription" })
             @Html.ValidationMessageFor(model => model.description)
         </div>
 
