@@ -38,6 +38,11 @@ namespace Organics
                         "~/Content/themes/base/jquery.ui.datepicker.css",
                         "~/Content/themes/base/jquery.ui.progressbar.css",
                         "~/Content/themes/base/jquery.ui.theme.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/knockout").Include(
+                "~/Scripts/knockout-2.1.0.js"//,
+                //"~/Scripts/knockout-2.1.0.debug.js"
+                ));
         }
     }
 }

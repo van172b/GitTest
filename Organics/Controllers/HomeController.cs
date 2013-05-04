@@ -32,5 +32,11 @@ namespace Organics.Controllers
 
             return View();
         }
+
+        public ActionResult Products()
+        {
+            return View();
+        }
+
     }
 }
