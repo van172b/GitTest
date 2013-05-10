@@ -16,5 +16,11 @@ namespace Organics.Models
         public DateTime addDate { get; set; }
         public DateTime updatedDate { get; set; }
         public Decimal price { get; set; }
+
+        /*public ProductModels()
+        {
+            addDate = DateTime.Now;
+
+        }*/
     }
 }
