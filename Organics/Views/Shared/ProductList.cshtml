@@ -1,0 +1,22 @@
+﻿
+
+
+
+
+<table>
+    <thead>
+        <tr><th>First name</th><th>Last name</th></tr>
+    </thead>
+    <tbody data-bind="foreach: products">
+        <tr>
+            <td><a data-bind="click: deleteProduct">delete</a></td>
+            <td data-bind="text: ID"></td>
+            <td data-bind="text: name"></td>
+            <td data-bind="text: description"></td>
+        </tr>
+    </tbody>
+</table>
+
+
+<input type="button" id="btnGetProducts" value="Get Products" data-bind="click: getProducts" />
+
