@@ -178,6 +178,7 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\BusinessModels.cs" />
+    <Compile Include="Models\ProductDTOModel.cs" />
     <Compile Include="Models\ProductModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
