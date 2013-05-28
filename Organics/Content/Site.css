@@ -21,6 +21,7 @@ a {
     padding-right: 3px;
     text-decoration: underline;
 }
+a { cursor: pointer; }
 
     a:link, a:visited,
     a:active, a:hover {
